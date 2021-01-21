@@ -1,0 +1,61 @@
+{
+    "appetizers": [
+        {
+            "name": "Cornbread",
+            "ingredients": ["eggs", "milk", "sweet kernel corn"],
+            "description": "This chessy twist is made with zesty tomato and valveeta"
+        },
+        {
+            "name": "Nacho Sticks",
+            "ingredients": ["Lean ground beef", "Diced  Tomatoes", "Cooking Spray"],
+            "description": "Stuff ground beef, zesty tomatoes and valveeta"
+        }
+    ],
+    "coldSandwiches": [
+        {
+            "name": "Turkey Wraps",
+            "ingredients": ["flour tortillas", "lettuce", "turkey"],
+            "description": "Fruity and flavorful"
+        },
+        {    "name": "Chickpea Salad",
+            "ingredients": ["Chopped onion", "Chopped celery", "Garbanzo"],
+            "description": "Contain less fat and cholesterol"
+        }
+    ],
+    "hotSandwiches": [
+        {
+            "name": "Hot Ham and Cheese",
+            "ingredients": ["Hamburger Buns", "Sliced Ham", "Slices Chees"],
+            "description": "Ham and Cheese made at Jason's Deli"
+        },
+        {
+            "name": "Roast Beef",
+            "ingredients": ["Roast Beef", "Onion", "Spicy Mustard"],
+            "description": "yummy"
+        }
+    ],
+    "desserts": [
+        {
+            "name": "Banana Cream Pie",
+            "ingredients": ["Banana syrup", "Vanilla extract", "Milk"],
+            "description": "Smooth and creamy"
+        },
+        {
+            "name": "Oreo Fluff",
+            "ingredients": ["Cream cheese", "Milk", "Whipped topping", "Oreo's"],
+            "description": "Perfect for anytime you have craving"
+        }
+    ],
+    "drinks": [
+        {
+            "name": "Sapporo Bear",
+            "ingredients": ["Malted Barley", "Water", "Yeast", "Hops"],
+            "description": "Amzing crispy, perfectly balanced taste"
+        },
+        {
+            "name": "Pepsi",
+            "ingredients": ["Carbonated Water", "Sugar", "Colour", "Acid", "Flavorings"],
+            "description": "Great tasting refreshment"
+        }
+    ]   
+}   
