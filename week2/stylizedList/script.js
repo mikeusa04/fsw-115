@@ -1,3 +1,11 @@
+/*You will create a stylized list with data received off the web.
+
+First, get data in postman from an API.
+Second, copy it into your .js file and assign it to a variable. Remember that it will automatically parse to JS when it runs with node. 
+Third, link an html file and create a stylized list webpage with the data.*/
+
+// get the data from postman api then assigne it to a var data and put JSON.parse( `[......]`)
+
 let data = JSON.parse( `[{
     "count": 82,
     "next": "http://swapi.dev/api/people/?page=2",
@@ -291,12 +299,16 @@ document.body.append(ol);
 }
 
 
-//or another to go inside the nesting array(results)
+//or another way to go inside the nesting array(results)
 /*var storage = data[0].results;
 var output = document.getElementById("output") 
-//output.innerHTML += array
+//output.innerHTML += storage
 for(let i=0; i < storage.length; i++ ) {
     // to show whats inside that array in the console do
     //console.log(array[i])
     output.innerHTML += "<li>" + storage[i].name + storage[i].height + storage[i].mass + storage[i].hair_color + "</li>" 
 }*/
+
+/*to access the array (films) inside the array (results) do this (also same with next array vehicles)
+let storage1 = data[0].results[0].films
+console.log(storage1)*/
