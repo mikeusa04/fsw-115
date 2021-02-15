@@ -49,3 +49,23 @@ function showData(arr){
         document.body.appendChild(h1)
     }
 }
+
+
+/* we can also add a button to the html <button onclick="getData()">Click me</button> and then we wrape the 
+whole thing above inside that function of click so when we click the button the whole function excuted.
+
+function getData(){
+    const xhr = new XMLHttpRequest()
+
+xhr.open("GET", "https://api.vschool.io/pokemon", true)
+xhr.send()
+
+xhr.onreadystatechange = function(){
+    if(xhr.readyState === 4 && xhr.status === 200){
+        const JSONdata = xhr.responseText
+        const data = JSON.parse(JSONdata)
+        showData(data.objects[0].pokemon)
+        console.log(data)  // open ur console u will see the objects inside of it the 0 iside of it the pokemon
+    } 
+}
+}*/
