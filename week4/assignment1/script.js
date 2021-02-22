@@ -9,7 +9,7 @@ axios.get("https://api.vschool.io/mikesaleh1/todo")
             document.body.appendChild(h1)
             h1.addEventListener("click", function(e){
                 e.preventDefault()
-                if(response.data[i].completed === false){
+                if(response.data[i].completed === true){
                     h1.style.textDecoration = "line-through"
                 }
             })
