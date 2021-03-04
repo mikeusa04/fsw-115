@@ -7,15 +7,45 @@ axios.get("https://api.vschool.io/mikesaleh1/todo")
             const h1 = document.createElement('h1')
             h1.textContent = "Title: " + response.data[i].title +" - Description: " + response.data[i].description +" - Price: " + response.data[i].price
             document.body.appendChild(h1)
+            if(response.data[i].completed === true){
+                h1.style.textDecoration = "line-through"
+            }
+
             h1.addEventListener("click", function(e){
                 e.preventDefault()
-                if(response.data[i].completed === true){
-                    h1.style.textDecoration = "line-through"
-                }
+                //if(response.data[i].completed === true){
+                //    h1.style.textDecoration = "line-through"
+                //}
+                axios.put(`https://api.vschool.io/mikesaleh1/todo/${response.data[i]._id}`, {completed: !response.data[i].completed})
+                  .then(res => console.log(res))
+                  .catch(err => console.log(err))
             })
+
+            // delete button
+            const deleteButton = document.createElement("button")
+            deleteButton.innerText = "Delete"
+            // deleteButton.addEventListener("click", deleteTodo)
+            deleteButton.addEventListener("click", function(e){
+                e.preventDefault()
+                axios.delete(`https://api.vschool.io/mikesaleh1/todo/${response.data[i]._id}`)
+                  .then(res => console.log(res))
+                  .catch(err => console.log(err))
+            })
+            document.body.appendChild(deleteButton)
         }
     })
     .catch(error => console.log(error))
+
+    /* another way to create a delete button here
+    const deleteTodo = () => {
+        axios.delete(`https://api.vschool.io/mikesaleh1/todo/${response.data[i]._id}`)
+        .then(res => console.log(res))
+        .catch(err => console.log(err))
+    }
+    and then put this 
+    deleteButton.addEventListener("click", deleteTodo)
+    in the delete button part above*/
+
 
     /* you can do post request like this or below
     const todoForm = document.todoform
