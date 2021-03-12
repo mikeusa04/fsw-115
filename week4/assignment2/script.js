@@ -3,7 +3,7 @@ When the button is clicked, an axios.get request will go to an API of the studen
 Must be fully styled - responsive
 2 APIs must be used, (one for each page)*/
 
-
+//list1
 const getMikeData = () => {
 axios.get("https://api.vschool.io/mikesaleh1/todo")
     //.then(response => console.log(response)) this is to show u everything in the console, we could do 
@@ -28,7 +28,7 @@ axios.get("https://api.vschool.io/mikesaleh1/todo")
 /* Note: this function      const getMikeData = () => {.....} is same as
                             function getMikeData () {......}
 */
-
+// list2
 const getCatFacts = () => {
     axios.get("https://cat-fact.herokuapp.com/facts")
     .then (res => {
